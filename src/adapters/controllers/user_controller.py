@@ -15,7 +15,7 @@ async def register_user(data_user: UserCreateSchema):
     return user
 
 @router.get("/{user_id}", status_code=status.HTTP_200_OK)
-async def get_user(user_id: int):
+async def get_user_by_user_id(user_id: int):
     user = await service.get_user_by_id(user_id)
     print(user)
     if not user:

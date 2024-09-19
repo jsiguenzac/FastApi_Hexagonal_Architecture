@@ -33,8 +33,8 @@ def test_get_user():
             "user": {
                 "name": "Joel",
                 "last_name": "Sigüenza",
-                "email": "jsiguenzac@gmail.com",
-                "phone": "",
+                "email": "siguenzajoel10@gmail.com",
+                "phone": "921018664",
                 "id_user": 1
             }
         }
