@@ -22,7 +22,7 @@ La arquitectura empleada separa las diferentes responsabilidades en la aplicaci�
 
 `Capas Externas`:
 
-- Configuración: Maneja la configuración del sistema, como la configuración de la base de datos en database.py. Cabe mencionar que esta con una base de datos alojada en Xata, no es necesario crear la bd de manera local ni ejecutar el script.
+- Configuración: Maneja la configuración del sistema, como la configuración de la base de datos en database.py. Cabe mencionar que está configurada con una base de datos alojada en Xata, se puede revisar en el archivo .env. No es necesario crear la bd de manera local ni ejecutar el script.
 
 - Rutas: Define las rutas de la API que orquestan las solicitudes a los controladores, gestionadas por routes_manager.py.
 
@@ -33,7 +33,7 @@ La arquitectura empleada separa las diferentes responsabilidades en la aplicaci�
 Instalación
 -----------
 
-Crear un entorno virtual, activarlo e instalar las dependencias desde el archivo requirements.txt
+Crear un entorno virtual (solo si no se encuentra en la raiz del proyecto), activarlo e instalar las dependencias desde el archivo requirements.txt
 
 Usar `Command Prompt` (recomendable)
 
