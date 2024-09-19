@@ -9,13 +9,13 @@ router = APIRouter(
 
 service = UserService()
 
-@router.post("/Register", status_code=status.HTTP_200_OK)
+@router.post("/Register", status_code=status.HTTP_201_CREATED)
 async def register_user(data_user: UserCreateSchema):
     user = await service.register_user(data_user)
     return user
 
 @router.get("/{user_id}", status_code=status.HTTP_200_OK)
-async def get_user_by_id(user_id: int):
+async def get_user(user_id: int):
     user = await service.get_user_by_id(user_id)
     print(user)
     if not user:

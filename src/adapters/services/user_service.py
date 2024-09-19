@@ -23,7 +23,6 @@ class UserService:
                 })
             return exit_json(1, {
                 "exito": True,
-                "user_id": user.idUsuario,
                 "mensaje": "USUARIO_REGISTRADO"
             })
         except Exception as e:
@@ -51,6 +50,6 @@ class UserService:
                 email=user.Correo,
                 phone=user.Telefono
             )
-            return exit_json(1, user_map)
+            return exit_json(1, {"user": user_map})
         except Exception as e:
             return exit_json(0, {"mensaje": str(e)})
